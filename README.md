@@ -1,2 +1,54 @@
 # transaction-validator-microservice
 Java Spring Boot microservice that validates financial transactions using REST APIs and microservice architecture.
+# Transaction Validator Microservice
+
+A Java Spring Boot microservice that validates financial transactions 
+before processing and storage. Built to demonstrate real-world FinTech 
+engineering patterns including microservice architecture, REST API 
+design, and secure transaction handling.
+
+## 🛠️ Tech Stack
+- Java 11+
+- Spring Boot
+- REST APIs
+- Maven
+- JUnit (unit testing)
+- Docker
+
+## 🚀 Features
+- Validates incoming financial transactions against business rules
+- Handles edge cases: duplicate transactions, invalid amounts, 
+  missing fields
+- Returns standardized success/error responses
+- Input validation and exception handling throughout
+- Secure API design with XSS protection
+
+## 📦 How to Run
+
+### Prerequisites
+- Java 11+
+- Maven 3.6+
+
+### Steps
+```bash
+git clone https://github.com/veena891/transaction-validator-microservice
+cd transaction-validator-microservice
+mvn clean install
+mvn spring-boot:run
+```
+
+## 📡 API Endpoints
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | /api/validate | Validate a transaction |
+| GET  | /api/health  | Health check |
+
+## 🧪 Running Tests
+```bash
+mvn test
+```
+
+## 👩‍💻 Author
+Veena Gosangari — Backend Software Engineer  
+[LinkedIn](https://linkedin.com/in/veena-g-31a635267) | 
+[GitHub](https://github.com/veena891)
